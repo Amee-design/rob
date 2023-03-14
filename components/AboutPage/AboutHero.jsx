@@ -4,6 +4,7 @@ import ContainerLayout from "../../Layouts/ContainerLayout";
 import Image from "next/image";
 import aboutHero from "../../assets/png/about-hero.png";
 import MobileNav from "../Navbars/MobileNav";
+import picHero from "../../assets/img/city1.jpeg";
 const AboutHero = () => {
   return (
     <div className="about-hero">
@@ -19,38 +20,28 @@ const AboutHero = () => {
                 data-aos="fade-right"
                 data-aos-duration="2000"
               >
-                Vision & Products
+                Our Vision
               </h1>
               <p
                 className=" text-base w-full md:text-lg mt-6 md:w-9/12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                VersusPay's long-term goal is to create cutting-edge
-                quick-response payment systems and revolutionize the QR code
-                payment sector. As a financial technology company, our main
-                services center on streamlining payments between businesses and
-                their clients through our scan, pay, and go solution while
-                promoting cashless ease and wise financial decisions through our
-                range of product offerings. Our goal for our product is to
-                provide more automated processing and dynamic payment code
-                solutions that can be used for a variety of over-the-counter and
-                international payment uses.
+                ROB Travels and Tours Company's vision is to be a leading international travels and tours company that offers our clients unforgettable travel experiences. We strive to provide our clients with exceptional service, expert knowledge, and personalized attention to create customized itineraries that exceed their expectations.
+
+  We envision our company as a global leader in sustainable tourism, promoting responsible travel practices that benefit local communities and the environment. Our commitment to sustainability is reflected in every aspect of our business, from our partnerships with eco-friendly hotels and transportation providers to our support for local conservation and cultural preservation initiatives..
               </p>
               <p
                 className="text-base md:text-lg mt-6 w-full md:w-9/12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                Our focus for our product is delivering more solutions around
-                automated carting and dynamic payment codes that would serve
-                multiple purposes for over-the-counter payments and
-                internationally supported payments.
+                Our goal is to inspire travelers to explore the world with a sense of curiosity, wonder, and respect. We aim to foster cultural exchange and understanding, promote personal growth and transformation, and create meaningful connections between people from different backgrounds and cultures.
               </p>
             </div>
             <div className="w-full md:w-1/2">
               <Image
-                src={aboutHero}
+                src={picHero}
                 alt="hello"
                 //   width={700}
                 //   height={700}

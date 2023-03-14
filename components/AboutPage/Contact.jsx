@@ -24,9 +24,11 @@ const Contact = () => {
               />
             </div>
             <div className="w-full md:w-6/12 text-white ">
+            <p>
+                America Office Address <br /> 11111 Bissonnet ste a Houston Texas, United State.
+              </p> 
               <p>
-                Address <br /> 447 Broadway, 2nd Floor Suite #1343, New York,
-                New York 10013, United States
+                Nigeria Office Address <br /> 8B Fadipe street,Egbeda City, Lagos State, Nigeria.
               </p>
               <p className="mt-3">
                 <a
@@ -35,7 +37,7 @@ const Contact = () => {
                   rel="noreferrer"
                 >
 
-                Phone Number <br /> +234 8100 556 7761
+                Phone Number <br /> +234 8140 060 350
                 </a>
               </p>
               <p className="mt-4">
@@ -44,7 +46,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                Email <br /> hello@versuspay.co
+                Email <br /> robtravels247@gmail.com
                 </a>{" "}
               </p>
             </div>

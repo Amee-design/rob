@@ -34,7 +34,7 @@ const More = () => {
             </div>
             <div className="flex rounded-[16px]  flex-col bg-white dark:bg-black p-6 ">
               <Link
-                href="https://medium.com/@hi_51858/versuspay-simplifying-your-payment-experience-7ddbd5086f2c"
+                href="https://medium.com/@robtravels247"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -45,8 +45,8 @@ const More = () => {
                 />
                 <h1 className="sora font-bold text-xl">Read our blog</h1>
                 <p className="mt-4 ">
-                  Read helpful articles, life at Versuspay, new features and
-                  in-depth information on Versuspay.
+                  Read helpful articles, life at ROB Travels and Tours, new features and
+                  in-depth information on ROB Travels and Tours.
                 </p>
               </Link>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import ContainerLayout from '../../Layouts/ContainerLayout'
 import { footerData } from '../../utils/footerData';
 import Link from 'next/link';
-import { BsYoutube, BsTwitter } from "react-icons/bs";
+import { BsYoutube, BsTwitter, BsInstagram, BsFacebook } from "react-icons/bs";
 import {FaLinkedinIn} from "react-icons/fa"
 const Footer = () => {
   return (
@@ -70,12 +70,15 @@ const Footer = () => {
               data-aos-duration="2000"
             >
               <div className="flex flex-col w-full md:w-1/2">
-                <p className="text-lightGrey text-base">Address</p>
+                <p className="text-lightGrey text-base">ROB Travels and Tours Company</p>
                 <p className="text-white text-base">
-                  <span className="font-semibold">Versuspay Inc.</span>
-                  <br /> 447 Broadway, 2nd Floor Suite #1343, New York, New York
-                  10013, United States
-                </p>
+                  <span className="font-semibold"></span>
+                  
+                America Office Address <br /> 11111 Bissonnet ste a Houston Texas, United State. <br />
+              
+              <br />
+                Nigeria Office Address <br /> 8B Fadipe street,Egbeda City, Lagos State, Nigeria.
+              </p>
               </div>
             </div>
           </div>
@@ -87,25 +90,25 @@ const Footer = () => {
             </div>
             <div className="md:w-8/12 justify-end space-x-6 flex ">
               <a
-                href="https://twitter.com/versuspay"
+                href="https://twitter.com/ROBTravels247/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsTwitter className="text-white text-2xl" />
               </a>
               <a
-                href="https://www.youtube.com/@versuspay1206"
+                href=" https://web.facebook.com/profile.php?id=100090899194823"
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsYoutube className="text-white text-2xl" />
+                <BsFacebook className="text-white text-2xl" />
               </a>
               <a
-                href="https://www.linkedin.com/company/versuspay/"
+                href="https://www.instagram.com/robtravelsandtours/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedinIn className="text-white text-2xl" />
+                <BsInstagram className="text-white text-2xl" />
               </a>
             </div>
           </div>

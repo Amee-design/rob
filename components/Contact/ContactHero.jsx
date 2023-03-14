@@ -107,43 +107,43 @@ const ContactHero = () => {
               >
                 <BsPhone className="text-blue hover:text-white text-xl" />
                 <p className="text-blackC hover:text-white dark:text-white">
-                  +234 81010 2056
+                  +234 8140 060 350
                 </p>
               </a>
               {/* end of a link */}
               <a
-                href="mailto:Hello@versuspay.co"
+                href="mailto:robtravels247@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
               >
                 <BsEnvelope className="text-blue hover:text-white text-xl" />
                 <p className="text-blackC hover:text-white dark:text-white">
-                  Hello@versuspay.co
+                  robtravels247@gmail.com
                 </p>
               </a>
               {/* end of a link */}
               <a
-                href="https://www.instagram.com/versuspay/"
+                href="https://www.instagram.com/robtravelsandtours/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
               >
                 <BsInstagram className="text-blue hover:text-white text-xl" />
                 <p className="text-blackC hover:text-white dark:text-white">
-                  @versuspay
+                  @robtravelsandtours
                 </p>
               </a>
               {/* end of a link */}
               <a
-                href="https://www.twitter.com/versuspay"
+                href="https://twitter.com/ROBTravels247/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
               >
                 <FiTwitter className="text-blue hover:text-white text-xl" />
                 <p className="text-blackC hover:text-white dark:text-white">
-                  @versuspay
+                  @robtravels247
                 </p>
               </a>
               {/* end of a link */}

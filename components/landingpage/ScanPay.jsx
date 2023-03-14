@@ -3,7 +3,6 @@ import ContainerLayout from "../../Layouts/ContainerLayout";
 import build from "../../assets/png/build.png"
 import gain from "../../assets/png/gain.png"
 import stay from "../../assets/png/stay.png"
-import spend from "../../assets/png/spend.png"
 
 import Image from "next/image"
 const ScanPay = () => {
@@ -17,7 +16,7 @@ const ScanPay = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              SCAN, PAY & GO
+              BOOK, PAY & GO
             </h1>
           </div>
           <div className=" w-full md:w-5/12 flex flex-col">
@@ -26,7 +25,7 @@ const ScanPay = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              Enjoy a frictionless buying experience.
+              Enjoy a frictionless travel and tour experience.
             </p>
             <p
               className="text-lg dark:text-white text-blackB mb-4"

@@ -1,10 +1,12 @@
 import React,{useEffect,useState} from 'react'
 import ContainerLayout from "../../Layouts/ContainerLayout";
 import Image from 'next/image';
-import enjoy from "../../assets/svgs/service-1.svg"
 import pay from "../../assets/png/international.png"
 import darkmode from "../../assets/png/dark-mode-spiral.png"
 import lightmode from "../../assets/png/light-mode-spiral.png"
+import book from "../../assets/img/kaaba.jpg"
+import city from "../../assets/img/city5.jpg"
+import back from "../../assets/img/city3.jpg"
 import Link from 'next/link';
 import { useTheme } from "next-themes";
 const Services = () => {
@@ -24,7 +26,7 @@ const Services = () => {
         <div className="w-full flex md:flex-row flex-col">
           <div className="w-full md:w-1/2 relative">
             <Image
-              src={enjoy}
+              src={book}
               alt="enjoy"
               className="w-8/12 h-auto z-10"
               data-aos="zoom-in"
@@ -39,18 +41,16 @@ const Services = () => {
             data-aos-duration="2000"
           >
             <h1 className="sora font-bold text-[24px] md:text-[40px]  2xl:w-9/12 w-11/12">
-              Enjoy Cashless Convenience, Spend Easy & Spend Smart.
+              Enjoy Endless Convenience Hajj and Umurah Services.
             </h1>
             <p className="text-blackB dark:text-white mt-6 mb-9">
-              Experience a new world of simplified, secured and super fast
-              payments every time you use Versuspay to send money, receive
-              funds, make payments and plan your finances.
+              Experience the best of Hajj and Umurah trip, with our first class hotel accomodation and hospitality.
             </p>
             <Link
               href="/coming-soon"
-              className="btn px-8 py-3 text-white flex justify-center w-fit"
+              //className="btn px-8 py-3 text-white flex justify-center w-fit"
             >
-              Create an account
+              Book your next trip with Us
             </Link>
           </div>
         </div>
@@ -62,9 +62,9 @@ const Services = () => {
             <div className="red-1 z-1"></div>
             <div className="green-1 z-1"></div>
             <Image
-              src={pay}
+              src={city}
               alt="enjoy"
-              className="w-8/12 h-auto z-10"
+              //className="w-8/12 h-auto z-10"
               data-aos="zoom-in-right"
               data-aos-duration="2000"
             />
@@ -75,18 +75,16 @@ const Services = () => {
             data-aos-duration="2000"
           >
             <h1 className="sora font-bold text-[24px] md:text-[40px]  2xl:w-10/12 w-11/12">
-              Pay seamlessly anywhere with the VersusPay Virtual Card.
+              Essay Booking and Tickets to any country have fun and explore.
             </h1>
             <p className="text-blackB dark:text-white mt-6 mb-9 2xl:w-10/12">
-              Leverage your Versuspay virtual card to safely authorize online
-              purchases on various e-commerce platforms and enjoy a secured,
-              cost-effective and frictionless experience.
+              Enjoy our extraordinary travel plan, have a safe flight with an outstanding travel itinary.
             </p>
             <Link
               href="/coming-soon"
-              className="btn px-8 py-3 text-white flex justify-center w-fit"
+              //className="btn px-8 py-3 text-white flex justify-center w-fit"
             >
-              Get Virtual Card
+              Contact Us Now
             </Link>
           </div>
         </div>
@@ -96,7 +94,7 @@ const Services = () => {
         <div className="w-full flex flex-col md:flex-row  my-[50px]">
           <div className="w-full md:w-1/2 relative">
             <Image
-              src={enjoy}
+              src={back}
               alt="enjoy"
               className="w-8/12 h-auto"
               data-aos="zoom-in"
@@ -111,12 +109,10 @@ const Services = () => {
             data-aos-duration="2000"
           >
             <h1 className="sora font-bold text-[24px] md:text-[40px]  2xl:w-9/12 w-11/12">
-              Make Cross-Border Payments with Ease.
+              Explore and Evolve the world with us.
             </h1>
             <p className="text-blackB dark:text-white mt-6 mb-9">
-              Send money to anyone, anywhere with the international wire
-              transfer feature that allows you send funds across our list of
-              supported countries with no hidden fees.
+              We are tested and trusted, book a trip our click on our contact button lets make your journey a super one for you.
             </p>
             <Link
               href="/coming-soon"
