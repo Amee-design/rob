@@ -28,49 +28,52 @@ const ContactHero = () => {
   
   
   const handleSubmit = async () => {
-    setError(false);
-    setErrorMsg('');
-    const data = await postContactUs({
-      email: email,
-      message: message,
-      subject: subject,
-      name: name,
-    });
+   
+    setOpenSuccess(true)
+//     setError(false);
+//     setErrorMsg('');
+//     const data = await postContactUs({
+//       email: email,
+//       message: message,
+//       subject: subject,
+//       name: name,
+//     });
 
-    if (data?.success) {
-      setSuccessMesage(
-        "Your message has been recieved successfully and we will get back to you as fast as possible"
-      );
-      setOpenSuccess(true);
-      // router.push("/")
-      setEmail('');
-      setMessage('');
-      setName('');
-      setSubject('');
-    }
-    else {
-      // alert(data?.error)
-      setOpenError(true);
-      console.log(data.data.error)
-      setErrorMsg(data.data.error);
-      setError(true)
-}
+//     if (data?.success) {
+//       setSuccessMesage(
+//         "Your message has been recieved successfully and we will get back to you as fast as possible"
+//       );
+//       setOpenSuccess(true);
+//       // router.push("/")
+//       setEmail('');
+//       setMessage('');
+//       setName('');
+//       setSubject('');
+//     }
+//     else {
+//       // alert(data?.error)
+//       setOpenError(true);
+//       console.log(data.data.error)
+//       setErrorMsg(data.data.error);
+//       setError(true)
+// }
   };
   const handleSubmitNews = async () => {
-    const data = await postNewsLetter({ email: emailB });
-    if (data?.success) {
-      setSuccessMesage("You have been added Successfully");
-      setOpenSuccess(true);
+    setOpenSuccess(true)
+    // const data = await postNewsLetter({ email: emailB });
+    // if (data?.success) {
+    //   setSuccessMesage("You have been added Successfully");
+    //   setOpenSuccess(true);
       
-    } else {
-      // alert(data?.error)
-      console.log(error)
-      setErrorMsg(data?.data?.error);
+    // } else {
+    //   // alert(data?.error)
+    //   console.log(error)
+    //   setErrorMsg(data?.data?.error);
 
-      setOpenError(true);
-      setError(true);
-      setEmailB('');
-    }
+    //   setOpenError(true);
+    //   setError(true);
+    //   setEmailB('');
+    // }
   };
 
   

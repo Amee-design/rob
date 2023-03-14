@@ -10,21 +10,22 @@ import Image from "next/image";
 import { postWaitList } from "../../services/homeServices";
 const ComingSoon = () => {
   const [submitted, setSubmitted] = useState(false);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-  const handleSubmit = async () => {
-    
-    const data = await postWaitList({ email: email });
-     if (data?.success) {
-       setSubmitted(true)
-       
-     } else {
-       // alert(data?.error)
-       console.log(data.data.error);
-       setErrorMsg(data.data.error);
-       setError(true);
-     }
+  const handleSubmit = () => {
+    setSubmitted(true);
+
+    // const data = await postWaitList({ email: email });
+    //  if (data?.success) {
+    //    setSubmitted(true)
+
+    //  } else {
+    //    // alert(data?.error)
+    //    console.log(data.data.error);
+    //    setErrorMsg(data.data.error);
+    //    setError(true);
+    //  }
   };
   return (
     <>
@@ -32,7 +33,7 @@ const ComingSoon = () => {
         <title>Coming Soon</title>
         <meta
           name="description"
-          content="Welcome to Versus pay scan pay and go"
+          content="A pacesetter for evolving and exploring the world"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />

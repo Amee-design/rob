@@ -2,8 +2,10 @@ import React from 'react'
 import ContainerLayout from '../../Layouts/ContainerLayout'
 import { footerData } from '../../utils/footerData';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BsYoutube, BsTwitter, BsInstagram, BsFacebook } from "react-icons/bs";
-import {FaLinkedinIn} from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
+import logo from "../../assets/png/new-logo.jpg";
 const Footer = () => {
   return (
     <div className="grad-bg flow-hide" id="footer">
@@ -18,24 +20,9 @@ const Footer = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            Download Our App On The App Store Or Play Store
+          Thanks for choosing us 
           </h1>
-          <div className="flex space-x-4 mt-[100px] justify-center mx-auto">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.softdroom.versuspay&hl=en&gl=US"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/google.svg" alt="gogle" />
-            </a>
-            <a
-              href="https://apps.apple.com/ng/app/versuspay/id1602067247"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/apple.svg" alt="gogle" />
-            </a>
-          </div>
+      
           <div className="w-full flex mt-[150px] md:flex-row flex-col">
             <div
               className="md:w-7/12 flex flex-col md:flex-row justify-between w-full"
@@ -85,7 +72,7 @@ const Footer = () => {
           <div className="w-full md:w-11/12 justify-between flex md:flex-row flex-col items-center mt-[150px] md:pb-[100px]">
             <div className=" md:w-4/12 w-10/12">
               <Link href="/">
-                <img src="/dark-logo.svg" alt="" className="w-32 h-auto md:w-44 mx-auto mb-6 md:mb-0" />
+                <Image src={logo} alt="" className="w-32 h-auto md:w-44 mx-auto mb-6 md:mb-0" />
               </Link>
             </div>
             <div className="md:w-8/12 justify-end space-x-6 flex ">

@@ -81,8 +81,8 @@ const Services = () => {
               Enjoy our extraordinary travel plan, have a safe flight with an outstanding travel itinary.
             </p>
             <Link
-              href="/coming-soon"
-              //className="btn px-8 py-3 text-white flex justify-center w-fit"
+              href="/contact-us"
+              className="btn px-8 py-3 text-white flex justify-center w-fit"
             >
               Contact Us Now
             </Link>
@@ -114,12 +114,7 @@ const Services = () => {
             <p className="text-blackB dark:text-white mt-6 mb-9">
               We are tested and trusted, book a trip our click on our contact button lets make your journey a super one for you.
             </p>
-            <Link
-              href="/coming-soon"
-              className="btn px-8 py-3 text-white flex justify-center w-fit"
-            >
-              Send Money
-            </Link>
+        
           </div>
         </div>
 

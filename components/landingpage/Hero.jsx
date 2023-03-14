@@ -38,23 +38,7 @@ const Hero = () => {
                  We strive to offer a wide range of high-quality travel services, including flights, accommodations, transportation, 
                  and activities, all while ensuring the safety and comfort of our clients anytime anywhere. 
               </p>
-              <div className="flex space-x-4 mt-10 md:mt-4">
-                <a
-                 href="https://play.google.com/store/apps/details?id=com.softdroom.versuspay&hl=en&gl=US"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/google.svg" alt="gogle" />
-                </a>
-                <a
-                  href="https://apps.apple.com/ng/app/versuspay/id1602067247"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="/apple.svg" alt="gogle" />
-                </a>
-                <img src="/scanner.png" alt="image" className="w-12 h-auto hidden md:block" />
-              </div>
+     
             </div>
             <div className="w-full md:w-1/2  flex justify-center relative mt-12 md:mt-0">
               <div className="red z-1"></div>
@@ -71,23 +55,7 @@ const Hero = () => {
             </div>
           </div>
           {/* Contries */}
-          <div
-            className="w-full flex flex-col mt-12"
-            // data-aos="fade-up"
-            // data-aos-duration="2000"
-          >
-            <p className="text-blackText dark:text-white text-center mb-6">
-              Countries We Are Live In
-            </p>
-            <div className="w-full ">
-
-            <img
-              src="/countries-live.png"
-              alt="countries"
-              className="w-[1000px] md:w-full  md:h-auto"
-              />
-              </div>
-          </div>
+        
         </div>
       </ContainerLayout>
     );
