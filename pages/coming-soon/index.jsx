@@ -36,7 +36,7 @@ const ComingSoon = () => {
           content="A pacesetter for evolving and exploring the world"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/logo.jpg" />
       </Head>
       <div className=" w-full flex flex-col">
         <div className="coming-soon-bg h-screen">
