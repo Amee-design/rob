@@ -32,9 +32,9 @@ const ScanPay = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              Avoid standing in long queues, waiting for credit or debit alerts
-              or payment receipts from vendors, Simply Scan, Pay and Go with the
-              unique vendors tag available at the checkout.
+              Avoid unsuccessful and stressfull bookings, waiting for credit or debit alerts
+              or payment receipts from agencies, Simply Book, Pay and Go with ROB Travels and Tours
+              unique services.
             </p>
           </div>
         </div>
