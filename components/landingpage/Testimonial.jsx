@@ -27,7 +27,7 @@ const Testimonial = () => {
       <div className="w-full mb-[200px] mt-[100px]">
         <h1 className="text-blue text-base text-center">Testimonial</h1>
         <h1 className="text-black dark:text-white text-center md:text-[36px] 2xl:text-[40px] sora font-extrabold mb-6 ">
-          Why businesses love Versuspay 🤗
+          Why our Customers love ROB Travels and Tours Services 🤗
         </h1>
 
         <div className="w-full flex space-x-4 items-center justify-center ">
@@ -48,16 +48,12 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Abel Yohanna
+                  Baba Ote
                 </h1>
-                <p className="text-md textblackText">Director Asemota Foods</p>
+                <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
-                  "Versuspay is a game changer for us at Asemota, our customers
-                  can transact faster and easier now, we don't have to put up
-                  our account number at the counter again, as they can just scan
-                  and make payments. It is a fast and reliable platform, the
-                  best I have seen so far"
+                  "ROB Travels and Tours is so extraordinary their services are unique"
                 </p>
               </div>
             </div>

@@ -12,7 +12,7 @@ import claritas from "../../assets/png/claritas.png";
 const MeetTeam = () => {
   return (
     <ContainerLayout>
-      //<div
+      <div
         className="w-full mt-[120px]"
         data-aos="zoom-in"
         data-aos-duration="2000"
