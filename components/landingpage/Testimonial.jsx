@@ -69,15 +69,12 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Pauline
+                  Jejeniwa
                 </h1>
-                <p className="text-md textblackText">Founder GG Cafteria</p>
+                <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
-                  "Since we started using Versuspay to accept payments, we have
-                  been pleading with our customers to make payments to us
-                  through Versuspay. The speed and it's efficiency has always
-                  been our wow moment"
+                  "Uniqueness at its peak"
                 </p>
               </div>
             </div>
