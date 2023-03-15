@@ -1,8 +1,6 @@
 import React from 'react'
 import ContainerLayout from '../../Layouts/ContainerLayout'
-import lightmode from "../../assets/png/light-mode-spiral.png";
-import darkmode from "../../assets/png/dark-mode-spiral.png";
-import Image from 'next/image';
+
 const Contact = () => {
   
   return (
@@ -18,10 +16,7 @@ const Contact = () => {
               <h1 className="text-white text-[24px] md:text-[40px] sora font-bold">
                 Contact Us
               </h1>
-              <Image
-                src={lightmode}
-                className="md:w-[350px] top-[200px] md:top-0  left-[-100px] absolute md:bottom-[-220px] md:left-[-190px] "
-              />
+             
             </div>
             <div className="w-full md:w-6/12 text-white ">
             <p>
