@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>VersusPay</title>
+        <title>RobTravels</title>
         <meta
           name="description"
           content="A pacesetter for evolving and exploring the world"
