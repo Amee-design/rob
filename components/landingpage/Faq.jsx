@@ -11,12 +11,12 @@ const Faq = () => {
         </h1>
         <SingleFaq title="Is your company fully registered?">
           <p className="text-lg dark:text-white">
-            Yes, ROB Travels and Tours Company is fully registed under CAC, IATAN and NAHCON.
+            Yes, ROB Travels and Tours Company is fully registed under CAC, IATA and NAHCON.
           </p>
         </SingleFaq>
         <SingleFaq title="Is your company just for Hajj and Umurah?">
           <p className="text-lg dark:text-white">
-            No, ROB Travels and Tours endorse travelling to any country globally, book a trip, travel and tour with us now!!!
+            No, ROB Travels and Tours endorse travelling to any country globally, Bookings, Tickets and Visa's applications are all the services we render!!!
           </p>
           <div className="flex items-center mt-2 space-x-2">
             {" "}
