@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BsYoutube, BsTwitter, BsInstagram, BsFacebook } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa"
-import logo from "../../assets/png/new-logo.jpg";
+import logo from "../../assets/png/a.png";
 const Footer = () => {
   return (
     <div className="grad-bg flow-hide" id="footer">
