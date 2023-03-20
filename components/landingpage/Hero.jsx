@@ -35,7 +35,7 @@ const Hero = () => {
                 data-aos-duration="2000"
               >
                 We provide our clients with <span className="font-bold">Exceptional travel Experience </span> that are tailored to their unique needs and preferences.
-                 We strive to offer a wide range of high-quality travel services, including flights, accommodations, transportation, 
+                 We strive to offer a wide range of high-quality travel services, including flights Booking, tickets, Visa's, accommodations, transportation, 
                  and activities, all while ensuring the safety and comfort of our clients anytime anywhere. 
               </p>
      

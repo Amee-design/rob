@@ -5,7 +5,7 @@ import Link from 'next/link'
 import CustomDrop from "./CustomDrop"
 import { BsFillSunFill } from "react-icons/bs"
 import { BsFillMoonStarsFill } from "react-icons/bs"
-import logo from "../../assets/png/new-logo.jpg";
+import logo from "../../assets/png/a.png";
 import Image from 'next/image';
 
 const DesktopNav = () => {
