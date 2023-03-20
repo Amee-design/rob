@@ -23,7 +23,7 @@ const Questions = () => {
             No, ROB Travels and Tours endorse travelling to any country globally, Booking a trip, Tickets and Visas are services that we operates!!!
           </p>
           <div className="flex items-center mt-2 space-x-2">
-            <p> Start enjoying Versuspay now </p>{" "}
+            
             <span>
               <a
                 href="https://apps.apple.com/ng/app/versuspay/id1602067247"
