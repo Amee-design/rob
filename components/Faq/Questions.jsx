@@ -20,7 +20,7 @@ const Questions = () => {
         </SingleFaq>
         <SingleFaq title="Is your company just for Hajj and Umurah?">
           <p className="text-lg dark:text-white">
-            No, ROB Travels and Tours endorse travelling to any country globally, book a trip, travel and tour with us now!!!
+            No, ROB Travels and Tours endorse travelling to any country globally, Booking a trip, Tickets and Visas are services that we operates!!!
           </p>
           <div className="flex items-center mt-2 space-x-2">
             <p> Start enjoying Versuspay now </p>{" "}
@@ -31,7 +31,7 @@ const Questions = () => {
                 rel="noreferrer"
                 //className="text-blue font-semibold"
               >
-                Apple Store
+                
               </a>
             </span>
             <span>
@@ -41,7 +41,7 @@ const Questions = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Google Playstore
+            
               </a>
             </span>
           </div>
