@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { BsFillSunFill } from "react-icons/bs";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import  {FaTimes} from "react-icons/fa"
-import logo from "../../assets/png/new-logo.jpg";
+import logo from "../../assets/png/a.png";
 import {FaBars} from "react-icons/fa"
 import useMediaQuery from '../../hooks/useMediaQuery';
 const MobileNav = () => {
