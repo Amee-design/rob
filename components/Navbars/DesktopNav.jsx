@@ -58,7 +58,7 @@ const DesktopNav = () => {
            Register
         </Link>
         <Link
-          href="/coming-soon"
+          href="/register"
           className="text-base dark:text-white text-blackText"
           >
           Blog
