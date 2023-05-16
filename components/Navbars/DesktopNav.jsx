@@ -55,10 +55,10 @@ const DesktopNav = () => {
           href="/coming-soon"
           className="text-base dark:text-white text-blackText"
         >
-          Register
+           Register
         </Link>
         <Link
-          href="/contact-us"
+          href="/coming-soon"
           className="text-base dark:text-white text-blackText"
           >
           Blog
@@ -69,7 +69,7 @@ const DesktopNav = () => {
         >
           Ambassadors
         </Link>
-       
+        
        
         {currentTheme === "dark" ? (
           <div
