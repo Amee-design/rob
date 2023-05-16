@@ -1,42 +1,31 @@
-import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
-
-function MyForm() {
-  const [inputs, setInputs] = useState({});
-
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs(values => ({...values, [name]: value}))
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(inputs);
-  }
-
+import React from "react";
+import Head from "next/head";
+import AboutHero from "../../components/AboutPage/AboutHero";
+import TeamAbout from "../../components/AboutPage/TeamAbout";
+import Register from "../../components/AboutPage/Register";
+import Contact from "../../components/AboutPage/Contact";
+import Footer from "../../components/landingpage/Footer";
+const index = () => {
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Enter your name:
-      <input 
-        type="text" 
-        name="username" 
-        value={inputs.username || ""} 
-        onChange={handleChange}
-      />
-      </label>
-      <label>Enter your age:
-        <input 
-          type="number" 
-          name="age" 
-          value={inputs.age || ""} 
-          onChange={handleChange}
+    <>
+      <Head>
+        <title>Register</title>
+        <meta
+          name="description"
+          content="A pacesetter for evolving and exploring the world"
         />
-        </label>
-        <input type="submit" />
-    </form>
-  )
-}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo.jpg" />
+      </Head>
+      <div className="w-full">
+        <AboutHero />
+        <TeamAbout />
+        {/* <Register/> */}
+        <Contact />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MyForm />);
+export default index;
