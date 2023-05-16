@@ -55,6 +55,12 @@ const DesktopNav = () => {
           href="/coming-soon"
           className="text-base dark:text-white text-blackText"
         >
+          About Us
+        </Link>
+        <Link
+          href="/contact-us"
+          className="text-base dark:text-white text-blackText"
+          >
           Blog
         </Link>
         <Link
