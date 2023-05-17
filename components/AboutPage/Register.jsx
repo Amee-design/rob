@@ -196,18 +196,27 @@ const ContactHero = () => {
                 <input
                   type="text"
                   className="border-none w-full  outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
-                  placeholder="Subject"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
+                  placeholder="Address"
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
                 />
               </div>
               <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-4">
-                <textarea
+                <input
+                  type="text"
+                  className="border-none w-full  outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
+                  placeholder="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                />
+              </div>
+              <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-4">
+                <input
                   type="text"
                   className="border-none outline-none bg-transparent focus:outline-none focus:border-none w-full placeholder:text-placeholderLight"
-                  placeholder="Message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <div
