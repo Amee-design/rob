@@ -196,7 +196,7 @@ const ContactHero = () => {
               </div>
               <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-4">
                 <input
-                  type="text"
+                  type="password"
                   className="border-none outline-none bg-transparent focus:outline-none focus:border-none w-full placeholder:text-placeholderLight"
                   placeholder="Password"
                   value={password}
