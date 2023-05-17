@@ -122,7 +122,7 @@ const ContactHero = () => {
                   className="border-none w-full outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
                   placeholder="Name"
                   value={Fullname}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={(e) => setFullname(e.target.value)}
                 />
               </div>
               <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-4">

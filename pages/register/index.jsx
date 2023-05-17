@@ -2,6 +2,8 @@ import React from "react";
 import Register from "../../components/AboutPage/Register";
 import Footer from "../../components/landingpage/Footer";
 import Head from "next/head";
+
+
 const index = () => {
   return (
     <div className="w-full">
