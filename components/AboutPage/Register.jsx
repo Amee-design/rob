@@ -10,6 +10,7 @@ import { postContactUs, postNewsLetter } from "../../services/homeServices";
 import Success from "../Modals/SuccessModal";
 import Error from "../Modals/ErrorModal";
 import { useRouter } from "next/router";
+import axios from "axios";
 const ContactHero = () => {
   const router = useRouter();
   const [email, setEmail] = useState('');
