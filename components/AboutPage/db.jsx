@@ -1,9 +1,9 @@
-const express = require('express');
-const mysql = require('mysql');
+import express, { json } from 'express';
+import { createConnection } from 'mysql';
 const app = express();
 const port = 5000;
 
-const connection = mysql.createConnection({
+const connection = createConnection({
   host: 'localhost',
   user: 'root',
   password: 'Ameerah@1',
@@ -18,14 +18,14 @@ connection.connect((err) => {
   console.log('Connected to MySQL database');
 });
 
-app.use(express.json());
+app.use(json());
 
 
 app.post('/api/form', (req, res) => {
-  const { name, email, message } = req.body;
-  const formData = { name, email, message };
+  const { fullname, email, address, username, password } = req.body;
+  const formData = { fullname, email, address, username, password };
 
-  connection.query('INSERT INTO your_table_name SET ?', formData, (error, results) => {
+  connection.query('INSERT INTO account SET ?', formData, (error, results) => {
     if (error) {
       console.error('Error inserting form data into MySQL:', error);
       res.status(500).json({ success: false, message: 'Server error' });
