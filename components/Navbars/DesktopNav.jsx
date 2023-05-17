@@ -52,7 +52,7 @@ const DesktopNav = () => {
           Contact Us
         </Link>
         <Link
-          href="/coming-soon"
+          href="/register"
           className="text-base dark:text-white text-blackText"
         >
            Register
