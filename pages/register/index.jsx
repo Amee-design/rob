@@ -15,7 +15,6 @@ const index = () => {
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Register/>
-      <Register />
       <Footer />
     </div>
   );
