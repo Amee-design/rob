@@ -30,6 +30,14 @@ const ContactHero = () => {
   const handleSubmit = async () => {
    
     setOpenSuccess(true)
+    console.log(
+      {
+        email: email,
+        name: name,
+        message: message,
+        subject: subject,
+      }
+    )
 //     setError(false);
 //     setErrorMsg('');
 //     const data = await postContactUs({
