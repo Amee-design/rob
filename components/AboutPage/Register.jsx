@@ -143,7 +143,7 @@ const ContactHero = () => {
        
         <div className="w-full flex md:flex-row flex-col items-center mt-16">
           <div
-            className="w-full md:w-7/12 flex flex-col"
+            className="w-full md:w-12/12 flex flex-col"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
