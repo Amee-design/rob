@@ -29,9 +29,9 @@ const ContactHero = () => {
   const[openError,setOpenError] = useState(false);
   
   
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
    
-    setOpenSuccess(true)
+    
     console.log(
       {
         
@@ -43,6 +43,47 @@ const ContactHero = () => {
         
       }
     )
+   //   e.preventDefault();
+
+   // const data = {
+    //  name,
+    //  email,
+   // };
+
+   const axiosOptions = {
+  headers: {
+    "Content-Type": "application/json",
+  },
+  baseURL: "http://localhost:3306/register",
+  username: "root",
+  password: "Ameerah@1",
+  database: "register",
+};
+   const data = {
+    
+        
+    fullname: Fullname,
+    email: email,
+    address: address,
+    username: username,
+    password: password,
+    
+  }
+
+    axios
+      .post("/account", data,axiosOptions )
+      .then((res) => {
+        if (res.status === 200) {
+          setOpenSuccess(true)
+          console.log("Data inserted successfully");
+        } else {
+          console.log("An error occurred");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    
 //     setError(false);
 //     setErrorMsg('');
 //     const data = await postContactUs({
