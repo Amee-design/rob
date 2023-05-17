@@ -105,65 +105,7 @@ const ContactHero = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            <p className="text-blue dark:text-white text-base mb-4">
-              Contact us
-            </p>
-            <h1 className="text-[24px] md:text-4xl sora font-bold 2xl:w-7/12 w-full lg:w-8/12 text-black dark:text-white">
-              Hello, how can we help you?
-            </h1>
-            <p className="mt-6 text-lg text-blackC hover:text-white dark:text-white ">
-              Fill in the form or drop an email
-            </p>
-            <div className="flex flex-col space-y-4 mt-6">
-              <a
-                href="tel:+234810102056"
-                target="_blank"
-                rel="noreferrer"
-                className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
-              >
-                <BsPhone className="text-blue hover:text-white text-xl" />
-                <p className="text-blackC hover:text-white dark:text-white">
-                  +234 8140 060 350
-                </p>
-              </a>
-              {/* end of a link */}
-              <a
-                href="mailto:robtravels247@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
-              >
-                <BsEnvelope className="text-blue hover:text-white text-xl" />
-                <p className="text-blackC hover:text-white dark:text-white">
-                  robtravels247@gmail.com
-                </p>
-              </a>
-              {/* end of a link */}
-              <a
-                href="https://www.instagram.com/robtravelsandtours/"
-                target="_blank"
-                rel="noreferrer"
-                className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
-              >
-                <BsInstagram className="text-blue hover:text-white text-xl" />
-                <p className="text-blackC hover:text-white dark:text-white">
-                  @robtravelsandtours
-                </p>
-              </a>
-              {/* end of a link */}
-              <a
-                href="https://twitter.com/ROBTravels247/"
-                target="_blank"
-                rel="noreferrer"
-                className="w-8/12 md:w-4/12 hover:bg-blue hover:text-white flex justify-center items-center space-x-3 p-3 border-blue rounded-[12px] border-[1px]"
-              >
-                <FiTwitter className="text-blue hover:text-white text-xl" />
-                <p className="text-blackC hover:text-white dark:text-white">
-                  @robtravels247
-                </p>
-              </a>
-              {/* end of a link */}
-            </div>
+           
           </div>
           <div
             className="w-full md:w-5/12 flex md:justify-end mt-8 md:mt-0 px-1"
