@@ -31,59 +31,41 @@ const ContactHero = () => {
   
   
   const handleSubmit = async (e) => {
-   
-    
-    console.log(
-      {
-        
-        fullname: Fullname,
-        email: email,
-        address: address,
-        username: username,
-        password: password,
-        
-      }
-    )
-   //   e.preventDefault();
 
-   // const data = {
-    //  name,
-    //  email,
-   // };
+      let data = JSON.stringify({
+  "username": username,
+  "email": email,
+  "address": address,
+  "password": password,
+  "fullname": Fullname
+});
 
-   const axiosOptions = {
-  headers: {
-    "Content-Type": "application/json",
+let config = {
+  method: 'post',
+  maxBodyLength: Infinity,
+  url: '127.0.0.1:3000/register',
+  headers: { 
+    'Content-Type': 'application/json'
   },
-  baseURL: "http://localhost:3306/register",
-  username: "root",
-  password: "Ameerah@1",
-  database: "register",
+  data : data
 };
-   const data = {
-    
-        
-    fullname: Fullname,
-    email: email,
-    address: address,
-    username: username,
-    password: password,
-    
-  }
 
-    axios
-      .post("/account", data,axiosOptions )
-      .then((res) => {
-        if (res.status === 200) {
+axios.request(config)
+.then((response) => {
+  
+          setOpenSuccess(true)
+          console.log("Data inserted successfully")
+  console.log(JSON.stringify(response.data));
+})
+.catch((error) => {
+  console.log(error);
+});
+//
+  
+  //  
           setOpenSuccess(true)
           console.log("Data inserted successfully");
-        } else {
-          console.log("An error occurred");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+       
     
 //     setError(false);
 //     setErrorMsg('');
@@ -143,7 +125,7 @@ const ContactHero = () => {
        
         <div className="w-full flex md:flex-row flex-col items-center mt-16">
           <div
-            className="w-full md:w-12/12 flex flex-col"
+            className="w-full md:w-4/12 flex flex-col"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
