@@ -43,7 +43,7 @@ const ContactHero = () => {
 let config = {
   method: 'post',
   maxBodyLength: Infinity,
-  url: 'http://ec2-54-146-52-249.compute-1.amazonaws.com:3000/register.0.0.1:3000/register',
+  url: 'http://ec2-54-146-52-249.compute-1.amazonaws.com:3000/register',
   headers: { 
     'Content-Type': 'application/json'
   },
