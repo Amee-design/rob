@@ -61,7 +61,7 @@ const Footer = () => {
                 <p className="text-white text-base">
                   <span className="font-semibold"></span>
                   
-                Lagos Office Address <br /> No 21, Isaac John street, Jenivik Place, Ikeja GRA. <br />
+                Lagos Office Address <br /> No 21, Isaac John street, Jenivik Place, Ikeja-Lagos GRA. <br />
                 09062021100
                 08140060350
               
