@@ -61,10 +61,14 @@ const Footer = () => {
                 <p className="text-white text-base">
                   <span className="font-semibold"></span>
                   
-                America Office Address <br /> 11111 Bissonnet ste a Houston Texas, United State. <br />
+                Lagos Office Address <br /> No 21, Isaac John street, Jenivik Place, Ikeja GRA. <br />
+                09062021100
+                08140060350
               
               <br />
-                Nigeria Office Address <br /> 8B Fadipe street,Egbeda City, Lagos State, Nigeria.
+                Abuja Office Address <br /> Suite 1, Stonehedge Hotel, 1041 Kur Mohammed Street, CBD Abuja-FCTS.
+                09062031102
+                +17132697924
               </p>
               </div>
             </div>
