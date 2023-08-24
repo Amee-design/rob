@@ -20,10 +20,10 @@ const Contact = () => {
             </div>
             <div className="w-full md:w-6/12 text-white ">
             <p>
-                America Office Address <br /> 11111 Bissonnet ste a Houston Texas, United State.
+                Lagos Office Address <br /> No 21, Isaac John street, Jenivik Place, Ikeja GRA.
               </p> 
               <p>
-                Nigeria Office Address <br /> 8B Fadipe street,Egbeda City, Lagos State, Nigeria.
+                Abuja Office Address <br /> Suite 1, Stonehedge Hotel, 1041 Kur Mohammed Street, CBD Abuja-FCTS.
               </p>
               <p className="mt-3">
                 <a
@@ -32,7 +32,8 @@ const Contact = () => {
                   rel="noreferrer"
                 >
 
-                Phone Number <br /> +234 8140 060 350
+                Phone Number <br /> +234 8140 060 350, 09062021100, 09062031100,
+                +17132697924
                 </a>
               </p>
               <p className="mt-4">

@@ -67,7 +67,7 @@ const Footer = () => {
               
               <br />
                 Abuja Office Address <br /> Suite 1, Stonehedge Hotel, 1041 Kur Mohammed Street, CBD Abuja-FCTS.
-                09062031102
+                09062031100
                 +17132697924
               </p>
               </div>
