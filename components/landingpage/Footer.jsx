@@ -62,13 +62,13 @@ const Footer = () => {
                   <span className="font-semibold"></span>
                   
                 Lagos Office Address <br /> No 21, Isaac John street, Jenivik Place, Ikeja-Lagos GRA. <br />
-                09062021100
+                09062021100,
                 08140060350
               
               <br />
               <br />
                 Abuja Office Address <br /> Suite 1, Stonehedge Hotel, 1041 Kur Mohammed Street, CBD Abuja-FCTS.
-                09062031100
+                09062031100,
                 +17132697924
               </p>
               </div>
