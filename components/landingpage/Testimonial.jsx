@@ -36,7 +36,7 @@ const Testimonial = () => {
             <IoIosArrowBack className="text-blue text-2xl" />
           </div> */}
           {/* cards */}
-          <div className="w-full md:w-10/12 grid-cols-1 grid md:grid-cols-2 gap-y-8 md:gap-x-8">
+          <div className="w-full md:w-10/12 grid-cols-1 grid lg:grid-cols-2 gap-y-8 lg:gap-x-8">
             {/* card */}
             <div className="w-full rounded-[16px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-4 h-auto dark:bg-[#0E0F0F]">
               <div className=" w-3/12 md:w-3/12">
@@ -69,12 +69,54 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Jejeniwa
+                  Lady_Igbekele
                 </h1>
                 <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
                   "Uniqueness at its peak"
+                </p>
+              </div>
+            </div>
+            {/* end of card */}
+            {/* card */}
+            <div className="w-full rounded-[16px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-4 h-auto dark:bg-[#0E0F0F]">
+              <div className=" w-3/12 md:w-3/12">
+                <Image
+                  className="w-full h-auto mb-3 "
+                  alt="person"
+                  src={abel}
+                ></Image>
+              </div>
+              <div className="w-full md:w-9/12 flex flex-col space-y-4">
+                <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
+                  Mhizdija
+                </h1>
+                <p className="text-md textblackText">Brand Ambassador</p>
+                <Image src={ratings} alt="ratings" className="w-fit h-auto" />
+                <p className="text-black dark:text-white text-base">
+                  "ROB Travels and Tours is your surest plug, they ae the best and reliable"
+                </p>
+              </div>
+            </div>
+            {/* end of card */}
+            {/* card */}
+            <div className="w-full rounded-[16px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-4 h-auto dark:bg-[#0E0F0F]">
+              <div className=" w-3/12 md:w-3/12">
+                <Image
+                  className="w-full h-auto mb-3 "
+                  alt="person"
+                  src={abel}
+                ></Image>
+              </div>
+              <div className="w-full md:w-9/12 flex flex-col space-y-4">
+                <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
+                  Lady_Barry
+                </h1>
+                <p className="text-md textblackText">Brand Ambassador</p>
+                <Image src={ratings} alt="ratings" className="w-fit h-auto" />
+                <p className="text-black dark:text-white text-base">
+                  "ROB Travels and Tours services is just the best, a trial will convinced you"
                 </p>
               </div>
             </div>
