@@ -4,8 +4,6 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ContainerLayout from '../../Layouts/ContainerLayout'
 import ratings from "../../assets/svgs/customer-rating.svg"
 import abel from "../../assets/png/abel.png"
-import victor from "../../assets/png/Victor.png"
-import idris from "../../assets/png/idris.jpeg"
 import Uztaz from "../../assets/png/Uztaz.png"
 import dija from "../../assets/png/dija.jpeg"
 import rokky from "../../assets/png/rokky.jpeg"
