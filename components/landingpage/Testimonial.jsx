@@ -5,6 +5,8 @@ import ContainerLayout from '../../Layouts/ContainerLayout'
 import ratings from "../../assets/svgs/customer-rating.svg"
 import abel from "../../assets/png/abel.png"
 import victor from "../../assets/png/Victor.png"
+import idris from "../../assets/png/idris.jpeg"
+import Uztaz from "../../assets/png/Uztaz.png"
 import Image from "next/image";
 const Testimonial = () => {
          const [translate, setTranslate] = useState(0);
@@ -27,7 +29,7 @@ const Testimonial = () => {
       <div className="w-full mb-[200px] mt-[100px]">
         <h1 className="text-blue text-base text-center">Meet Our Brand Ambassadors</h1>
         <h1 className="text-black dark:text-white text-center md:text-[36px] 2xl:text-[40px] sora font-extrabold mb-6 ">
-          Why ROB Travels and Tours Services is the Best 🤗
+          WhyROB Travels and Tours Services 🤗
         </h1>
 
         <div className="w-full flex space-x-4 items-center justify-center ">
@@ -95,7 +97,7 @@ const Testimonial = () => {
                 <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
-                  "ROB Travels and Tours is your surest plug, they are the best and reliable"
+                  "ROB Travels and Tours is your surest plug, they ae the best and reliable"
                 </p>
               </div>
             </div>
@@ -121,20 +123,18 @@ const Testimonial = () => {
               </div>
             </div>
             {/* end of card */}
-            {/* cards */}
-          <div className="w-full md:w-10/12 grid-cols-1 grid lg:grid-cols-2 gap-y-8 lg:gap-x-8">
             {/* card */}
-            <div className="w-full rounded-[16px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-4 h-auto dark:bg-[#0E0F0F]">
+            <div className="w-full rounded-[20px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-6 h-auto dark:bg-[#0E0F0F]">
               <div className=" w-3/12 md:w-3/12">
                 <Image
                   className="w-full h-auto mb-3 "
                   alt="person"
-                  src={abel}
+                  src={Uztaz}
                 ></Image>
               </div>
-              <div className="w-full md:w-9/12 flex flex-col space-y-4">
+              <div className="w-full md:w-9/16 flex flex-col space-y-6">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                Uztaz Idris Olayinka Adiatullah 
+                Uztaz Idrees Olayinka Adiatullah 
                 </h1>
                 <p className="text-md textblackText">Saudi Representative</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
@@ -143,6 +143,7 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
+            {/* end of card */}
           </div>
 
           {/* circular */}
