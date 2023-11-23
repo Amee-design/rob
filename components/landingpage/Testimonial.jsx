@@ -124,7 +124,7 @@ const Testimonial = () => {
             </div>
             {/* end of card */}
             {/* card */}
-            <div className="w-full rounded-[20px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-6 h-auto dark:bg-[#0E0F0F]">
+            <div className="w-full rounded-[16px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-6 h-auto dark:bg-[#0E0F0F]">
               <div className=" w-3/12 md:w-3/12">
                 <Image
                   className="w-full h-auto mb-3 "
