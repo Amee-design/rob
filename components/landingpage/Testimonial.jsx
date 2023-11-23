@@ -77,7 +77,6 @@ const Testimonial = () => {
                   "Uniqueness at its peak"
                 </p>
               </div>
-            </div>
           </div>
            {/* end of card */}
             {/* card */}
