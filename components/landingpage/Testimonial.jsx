@@ -77,6 +77,7 @@ const Testimonial = () => {
                   "Uniqueness at its peak"
                 </p>
               </div>
+            </div>
           </div>
            {/* end of card */}
             {/* card */}
@@ -98,10 +99,7 @@ const Testimonial = () => {
                   "Uniqueness at its peak"
                 </p>
               </div>
-             {/* end of card */}
-             </div>
-            {/* card */}
-            
+            </div>
           {/* circular */}
           {/* <div className="w-fit h-auto p-4 hidden md:flex justify-center items-center rounded-full shadow-md bg-white">
             <IoIosArrowForward className="text-blue text-2xl" />
