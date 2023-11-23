@@ -48,12 +48,12 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Baba Ote
+                  Mamarokky
                 </h1>
                 <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
-                  "ROB Travels and Tours is so extraordinary their services are unique"
+                  "ROB Travels and Tours is so extraordinary, their services are unique"
                 </p>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Jejeniwa
+                  Mhizdija
                 </h1>
                 <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
@@ -78,9 +78,30 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
-            {/* end of card */}
           </div>
-
+           {/* end of card */}
+            {/* card */}
+          <div className="w-full h-full rounded-[16px] review-shadow p-4 md:p-6 flex md:flex-row flex-col space-x-4 dark:bg-[#0E0F0F] ">
+              <div className="w-3/12 ">
+                <Image
+                  className="w-full h-auto mb-3"
+                  alt="person"
+                  src={victor}
+                ></Image>
+              </div>
+              <div className="w-full md:w-9/12 flex flex-col space-y-4">
+                <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
+                  Mhizdija
+                </h1>
+                <p className="text-md textblackText">Brand Ambassador</p>
+                <Image src={ratings} alt="ratings" className="w-fit h-auto" />
+                <p className="text-black dark:text-white text-base">
+                  "Uniqueness at its peak"
+                </p>
+              </div>
+            </div>
+             {/* end of card */}
+            {/* card */}
           {/* circular */}
           {/* <div className="w-fit h-auto p-4 hidden md:flex justify-center items-center rounded-full shadow-md bg-white">
             <IoIosArrowForward className="text-blue text-2xl" />

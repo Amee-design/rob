@@ -29,8 +29,8 @@ const DesktopNav = () => {
           <Link href="/">
             <Image src={logo} alt="" className="w-32" />
           </Link>
-        )}
-      </div>
+        )} 
+        </div>
       <div className="w-8/12 relative flex flex-row space-x-8 items-center ">
       
         <Link
