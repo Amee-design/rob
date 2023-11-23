@@ -98,6 +98,8 @@ const Testimonial = () => {
                 <p className="text-black dark:text-white text-base">
                   "Uniqueness at its peak"
                 </p>
+              </div>
+            </div>
           {/* circular */}
           {/* <div className="w-fit h-auto p-4 hidden md:flex justify-center items-center rounded-full shadow-md bg-white">
             <IoIosArrowForward className="text-blue text-2xl" />
