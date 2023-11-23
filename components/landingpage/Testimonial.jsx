@@ -98,8 +98,8 @@ const Testimonial = () => {
                   "Uniqueness at its peak"
                 </p>
               </div>
-            </div>
              {/* end of card */}
+             </div>
             {/* card */}
           {/* circular */}
           {/* <div className="w-fit h-auto p-4 hidden md:flex justify-center items-center rounded-full shadow-md bg-white">
