@@ -95,7 +95,7 @@ const Testimonial = () => {
                 <p className="text-md textblackText">Brand Ambassador</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
-                  "ROB Travels and Tours is your surest plug, they ae the best and reliable"
+                  "ROB Travels and Tours is your surest plug, they are the best and reliable"
                 </p>
               </div>
             </div>
