@@ -7,6 +7,9 @@ import abel from "../../assets/png/abel.png"
 import victor from "../../assets/png/Victor.png"
 import idris from "../../assets/png/idris.jpeg"
 import Uztaz from "../../assets/png/Uztaz.png"
+import dija from "../../assets/png/dija.jpeg"
+import rokky from "../../assets/png/rokky.jpeg"
+import lady from "../../assets/png/lady.jpeg"
 import Image from "next/image";
 const Testimonial = () => {
          const [translate, setTranslate] = useState(0);
@@ -29,7 +32,7 @@ const Testimonial = () => {
       <div className="w-full mb-[200px] mt-[100px]">
         <h1 className="text-blue text-base text-center">Meet Our Brand Ambassadors</h1>
         <h1 className="text-black dark:text-white text-center md:text-[36px] 2xl:text-[40px] sora font-extrabold mb-6 ">
-          WhyROB Travels and Tours Services 🤗
+          Why ROB Travels and Tours Services 🤗
         </h1>
 
         <div className="w-full flex space-x-4 items-center justify-center ">
@@ -45,7 +48,7 @@ const Testimonial = () => {
                 <Image
                   className="w-full h-auto mb-3 "
                   alt="person"
-                  src={abel}
+                  src={rokky}
                 ></Image>
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
@@ -66,7 +69,7 @@ const Testimonial = () => {
                 <Image
                   className="w-full h-auto mb-3"
                   alt="person"
-                  src={victor}
+                  src={lady}
                 ></Image>
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
@@ -87,7 +90,7 @@ const Testimonial = () => {
                 <Image
                   className="w-full h-auto mb-3 "
                   alt="person"
-                  src={abel}
+                  src={dija}
                 ></Image>
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
