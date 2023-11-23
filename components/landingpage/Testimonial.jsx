@@ -25,9 +25,9 @@ const Testimonial = () => {
   return (
     <ContainerLayout>
       <div className="w-full mb-[200px] mt-[100px]">
-        <h1 className="text-blue text-base text-center">Testimonial</h1>
+        <h1 className="text-blue text-base text-center">Meet Our Brand Ambassadors</h1>
         <h1 className="text-black dark:text-white text-center md:text-[36px] 2xl:text-[40px] sora font-extrabold mb-6 ">
-          Why our Customers love ROB Travels and Tours Services 🤗
+          Why ROB Travels and Tours Services is the Best 🤗
         </h1>
 
         <div className="w-full flex space-x-4 items-center justify-center ">
