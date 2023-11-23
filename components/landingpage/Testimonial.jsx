@@ -121,6 +121,28 @@ const Testimonial = () => {
               </div>
             </div>
             {/* end of card */}
+            {/* cards */}
+          <div className="w-full md:w-10/12 grid-cols-1 grid lg:grid-cols-2 gap-y-8 lg:gap-x-8">
+            {/* card */}
+            <div className="w-full rounded-[16px] review-shadow p-3 md:p-6 flex md:flex-row flex-col space-x-4 h-auto dark:bg-[#0E0F0F]">
+              <div className=" w-3/12 md:w-3/12">
+                <Image
+                  className="w-full h-auto mb-3 "
+                  alt="person"
+                  src={abel}
+                ></Image>
+              </div>
+              <div className="w-full md:w-9/12 flex flex-col space-y-4">
+                <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
+                Uztaz Idris Olayinka Adiatullah 
+                </h1>
+                <p className="text-md textblackText">Saudi Representative</p>
+                <Image src={ratings} alt="ratings" className="w-fit h-auto" />
+                <p className="text-black dark:text-white text-base">
+                  "Explore the world with us at ROB Travels and Tours Limited"
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* circular */}
