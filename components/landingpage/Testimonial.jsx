@@ -28,7 +28,7 @@ const Testimonial = () => {
   return (
     <ContainerLayout>
       <div className="w-full mb-[200px] mt-[100px]">
-        <h1 className="text-blue text-base text-center">Meet Our Brand Ambassadors</h1>
+        <h1 className="text-blue text-base text-center">Meet Our Brand Influencers</h1>
         <h1 className="text-black dark:text-white text-center md:text-[36px] 2xl:text-[40px] sora font-extrabold mb-6 ">
           Why ROB Travels and Tours Services 🤗
         </h1>
@@ -53,7 +53,7 @@ const Testimonial = () => {
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
                   Mamarokky
                 </h1>
-                <p className="text-md textblackText">Brand Ambassador</p>
+                <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
                   "ROB Travels and Tours is so extraordinary,their services are unique"
@@ -74,7 +74,7 @@ const Testimonial = () => {
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
                   Lady_Igbekele
                 </h1>
-                <p className="text-md textblackText">Brand Ambassador</p>
+                <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
                   "Uniqueness at its peak"
@@ -95,7 +95,7 @@ const Testimonial = () => {
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
                   Mhizdija
                 </h1>
-                <p className="text-md textblackText">Brand Ambassador</p>
+                <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
                   "ROB Travels and Tours is your surest plug, they are the best and reliable"
@@ -116,7 +116,7 @@ const Testimonial = () => {
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
                   Lady_Barry
                 </h1>
-                <p className="text-md textblackText">Brand Ambassador</p>
+                <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
                 <p className="text-black dark:text-white text-base">
                   "ROB Travels and Tours services is just the best, a trial will convinced you"
