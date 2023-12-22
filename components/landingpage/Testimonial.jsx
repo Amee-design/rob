@@ -8,6 +8,7 @@ import Uztaz from "../../assets/png/Uztaz.png"
 import dija from "../../assets/png/dija.jpeg"
 import rokky from "../../assets/png/rokky.jpeg"
 import lady from "../../assets/png/lady.jpeg"
+import yeesha from "../../assets/png/yeesha.jpeg"
 import Image from "next/image";
 const Testimonial = () => {
          const [translate, setTranslate] = useState(0);
@@ -51,7 +52,7 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Mamarokky
+                  Rokeebah Mamarokky
                 </h1>
                 <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
@@ -72,7 +73,7 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Lady_Igbekele
+                  Maryam Lady_Igbekele
                 </h1>
                 <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
@@ -93,7 +94,7 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Mhizdija
+                  Khadeejah Mhizdija
                 </h1>
                 <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
@@ -114,7 +115,7 @@ const Testimonial = () => {
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
                 <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
-                  Lady_Barry
+                  Ayeesha Lady_Barry
                 </h1>
                 <p className="text-md textblackText">Brand Influencer</p>
                 <Image src={ratings} alt="ratings" className="w-fit h-auto" />
