@@ -8,7 +8,7 @@ import Uztaz from "../../assets/png/Uztaz.png"
 import dija from "../../assets/png/dija.jpeg"
 import rokky from "../../assets/png/rokky.jpeg"
 import lady from "../../assets/png/lady.jpeg"
-import yeesha from "../../assets/png/yeesha.jpeg"
+import yeesha from "../../assets/png/yeesha.jpg"
 import Image from "next/image";
 const Testimonial = () => {
          const [translate, setTranslate] = useState(0);
@@ -110,7 +110,7 @@ const Testimonial = () => {
                 <Image
                   className="w-full h-auto mb-3 "
                   alt="person"
-                  src={abel}
+                  src={yeesha}
                 ></Image>
               </div>
               <div className="w-full md:w-9/12 flex flex-col space-y-4">
