@@ -88,7 +88,7 @@ const Testimonial = () => {
               <div className=" w-3/12 md:w-3/12">
                 <Image
                   className="w-full h-auto mb-3 "
-                  alt="person"
+                  alt="person" 
                   src={dija}
                 ></Image>
               </div>
