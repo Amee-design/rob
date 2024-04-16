@@ -8,6 +8,7 @@ import Services from "../components/landingpage/Services";
 import Faq from "../components/landingpage/Faq";
 import Footer from "../components/landingpage/Footer";
 import Testimonial from "../components/landingpage/Testimonial";
+import Reviews from "../components/landingpage/Reviews";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Services />
         <Testimonial />
         <Faq />
+        <Reviews />
         <Footer />
       </div>
     </>

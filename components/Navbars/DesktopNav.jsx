@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import Link from 'next/link'
-import CustomDrop from "./CustomDrop"
-import { BsFillSunFill } from "react-icons/bs"
-import { BsFillMoonStarsFill } from "react-icons/bs"
+import Link from "next/link";
+import CustomDrop from "./CustomDrop";
+import { BsFillSunFill } from "react-icons/bs";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import logo from "../../assets/png/a.png";
-import Image from 'next/image';
+import Image from "next/image";
 
 const DesktopNav = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -29,14 +29,10 @@ const DesktopNav = () => {
           <Link href="/">
             <Image src={logo} alt="" className="w-32" />
           </Link>
-        )} 
-        </div>
+        )}
+      </div>
       <div className="w-8/12 relative flex flex-row space-x-8 items-center ">
-      
-        <Link
-          href="/"
-          className="text-base dark:text-white text-blackText"
-        >
+        <Link href="/" className="text-base dark:text-white text-blackText">
           Home
         </Link>
         <Link
@@ -52,16 +48,10 @@ const DesktopNav = () => {
           Contact Us
         </Link>
         <Link
-          href="/register"
+          href="/gallery"
           className="text-base dark:text-white text-blackText"
         >
-           Register
-        </Link>
-        <Link
-          href="/register"
-          className="text-base dark:text-white text-blackText"
-          >
-          Blog
+          Gallery
         </Link>
         <Link
           href="/coming-soon"
@@ -69,8 +59,7 @@ const DesktopNav = () => {
         >
           Ambassadors
         </Link>
-        
-       
+
         {currentTheme === "dark" ? (
           <div
             className="flex space-x-4 cursor-pointer"
@@ -88,11 +77,9 @@ const DesktopNav = () => {
             <BsFillMoonStarsFill className="text-blackText text-2xl dark:text-white" />
           </div>
         )}
-
-       
       </div>
     </div>
   );
-}
+};
 
-export default DesktopNav
+export default DesktopNav;
