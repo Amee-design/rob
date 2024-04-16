@@ -15,6 +15,10 @@ export const footerData = [
         link: "Blog ",
         path: "/coming-soon",
       },
+      {
+        link: "Review ",
+        path: "/review",
+      },
     ],
   },
   // end of one
