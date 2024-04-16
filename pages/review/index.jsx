@@ -22,7 +22,7 @@ const Review = () => {
     try {
       if (name && title && rating && message) {
         const response = await axios.post(
-          "https://rob-api-1.onrender.com/api/v1/review",
+          "https://rob-api-1.onrender.com/api/v1/reviews",
           {
             name: name,
             title: title,
