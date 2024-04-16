@@ -7,6 +7,7 @@ import Head from "next/head";
 import { Rating } from "react-simple-star-rating";
 import axios from "axios";
 import { MdRateReview } from "react-icons/md";
+import Success from "../../components/Modals/SuccessModal";
 const Review = () => {
   const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
@@ -35,6 +36,7 @@ const Review = () => {
           setError("Error adding review, please try again");
         } else {
           console.log("success");
+          setSubmitted(true);
         }
       } else {
         setError("All fields are required.");
@@ -76,20 +78,12 @@ const Review = () => {
                 {submitted ? (
                   <div className="w-full mt-20 md:w-6/12 2xl:w-5/12 mx-auto max-w-2xl">
                     <div className="w-full coming-soon-content dark:bg-black">
-                      {/* <Image
-                                                alt="calender"
-                                                src={sub}
-                                                width={126}
-                                                height={126}
-                                                className="mx-auto"
-                                            /> */}
                       <MdRateReview className="" />
                       <p className="sora dark:text-white  md:text-4xl text-center  ">
                         Awesome!
                       </p>
                       <p className="text-lg text-blackC dark:text-white w-full md:w-full text-center mx-auto ">
-                        Thanks for providing us with your email we will keep in
-                        touch, please mark messages from us as not spam.
+                        Thanks for providing us with a review.
                       </p>
                     </div>
                   </div>
