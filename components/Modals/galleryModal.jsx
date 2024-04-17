@@ -3,7 +3,11 @@ import { Dialog, Transition } from "@headlessui/react";
 import axios from "axios";
 import Success from "./SuccessModal";
 
-export default function GalleryModal({ open, setOpenSuccess }) {
+export default function GalleryModal({
+  open,
+  setOpenSuccess,
+  fetchGalleryData,
+}) {
   const [files, setFiles] = useState([]);
   const [name, setName] = useState("");
   const [isUploading, setIsUploading] = useState(false);
@@ -44,6 +48,7 @@ export default function GalleryModal({ open, setOpenSuccess }) {
       );
       if (response.status === 201) {
         setIsUploaded(true);
+        fetchGalleryData();
         setFiles([]);
         setName("");
       } else {
@@ -66,7 +71,7 @@ export default function GalleryModal({ open, setOpenSuccess }) {
         <Success
           openSuccess={isUploaded}
           setOpenSuccess={setIsUploaded}
-          successMessage="Image uploaded Successfully"
+          successMessage="Files uploaded Successfully"
         />
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
