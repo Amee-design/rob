@@ -1,17 +1,19 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
-export default function Success({openSuccess,setOpenSuccess, successMessage}) {
-  
-
+export default function Success({
+  openSuccess,
+  setOpenSuccess,
+  successMessage,
+}) {
   return (
     <Transition.Root show={openSuccess} as={Fragment}>
       <Dialog
         as="div"
         className="fixed z-10 inset-0 overflow-y-auto"
-        onClose={() => setOpenSuccess(openSuccess) }
+        onClose={() => setOpenSuccess(openSuccess)}
       >
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
@@ -55,12 +57,10 @@ export default function Success({openSuccess,setOpenSuccess, successMessage}) {
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    Success 
+                    Success
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      {successMessage}
-                    </p>
+                    <p className="text-sm text-gray-500">{successMessage}</p>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import ContainerLayout from "../../Layouts/ContainerLayout";
 import DesktopNav from "../../components/Navbars/DesktopNav";
 import { BsPhone, BsEnvelope, BsInstagram } from "react-icons/bs";
@@ -26,74 +26,74 @@ const ContactHero = () => {
   const [errorB, setErrorB] = useState(false);
   const [errorMsgB, setErrorMsgB] = useState('');
   const [openSuccess, setOpenSuccess] = useState(false);
-  const [successMessage,setSuccessMesage] = useState('');
-  const[openError,setOpenError] = useState(false);
-  
-  
+  const [successMessage, setSuccessMesage] = useState('');
+  const [openError, setOpenError] = useState(false);
+
+
   const handleSubmit = async (e) => {
 
-      let data = JSON.stringify({
-  "username": username,
-  "email": email,
-  "address": address,
-  "password": password,
-  "fullname": Fullname
-});
+    let data = JSON.stringify({
+      "username": username,
+      "email": email,
+      "address": address,
+      "password": password,
+      "fullname": Fullname
+    });
 
-let config = {
-  method: 'post',
-  maxBodyLength: Infinity,
-  url: 'http://ec2-54-146-52-249.compute-1.amazonaws.com:3000/register',
-  headers: { 
-    'Content-Type': 'application/json'
-  },
-  data : data
-};
+    let config = {
+      method: 'post',
+      maxBodyLength: Infinity,
+      url: 'http://ec2-54-146-52-249.compute-1.amazonaws.com:3000/register',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: data
+    };
 
-axios.request(config)
-.then((response) => {
-  
-          setOpenSuccess(true)
-          console.log("Data inserted successfully")
-  console.log(JSON.stringify(response.data));
-})
-.catch((error) => {
-  console.log(error);
-});
-//
-  
-  //  
-          setOpenSuccess(true)
-          console.log("Data inserted successfully");
-       
-    
-//     setError(false);
-//     setErrorMsg('');
-//     const data = await postContactUs({
-//       email: email,
-//       message: message,
-//       subject: subject,
-//       Fullname: Fullname,
-//     });
+    axios.request(config)
+      .then((response) => {
 
-//     if (data?.success) {
-//       setSuccessMesage(
-//         "Your message has been recieved successfully and we will get back to you as fast as possible"
-//       );
-//       setOpenSuccess(true);
-//       // router.push("/")
-//       setEmail('');
-//       setMessage('');
-//       setName('');
-//       setSubject('');
-//     }
-//     else {
-//       // alert(data?.error)
-//       setOpenError(true);
-//       console.log(data.data.error)
-//       setErrorMsg(data.data.error);
-//       setError(true)
-// }
+        setOpenSuccess(true)
+        console.log("Data inserted successfully")
+        console.log(JSON.stringify(response.data));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    //
+
+    //  
+    setOpenSuccess(true)
+    console.log("Data inserted successfully");
+
+
+    //     setError(false);
+    //     setErrorMsg('');
+    //     const data = await postContactUs({
+    //       email: email,
+    //       message: message,
+    //       subject: subject,
+    //       Fullname: Fullname,
+    //     });
+
+    //     if (data?.success) {
+    //       setSuccessMesage(
+    //         "Your message has been recieved successfully and we will get back to you as fast as possible"
+    //       );
+    //       setOpenSuccess(true);
+    //       // router.push("/")
+    //       setEmail('');
+    //       setMessage('');
+    //       setName('');
+    //       setSubject('');
+    //     }
+    //     else {
+    //       // alert(data?.error)
+    //       setOpenError(true);
+    //       console.log(data.data.error)
+    //       setErrorMsg(data.data.error);
+    //       setError(true)
+    // }
   };
   const handleSubmitNews = async () => {
     setOpenSuccess(true)
@@ -101,7 +101,7 @@ axios.request(config)
     // if (data?.success) {
     //   setSuccessMesage("You have been added Successfully");
     //   setOpenSuccess(true);
-      
+
     // } else {
     //   // alert(data?.error)
     //   console.log(error)
@@ -113,23 +113,23 @@ axios.request(config)
     // }
   };
 
-  
+
   return (
     <ContainerLayout>
       <div className="w-full flex flex-col">
         <DesktopNav />
         <MobileNav />
         {/* sesiion-one */}
-<Success openSuccess={openSuccess} setOpenSuccess={setOpenSuccess} successMessage={successMessage} />
+        <Success openSuccess={openSuccess} setOpenSuccess={setOpenSuccess} successMessage={successMessage} />
         <Error openError={openError} setOpenError={setOpenError} errorMessage={errorMsg} />
-       
+
         <div className="w-full flex md:flex-row flex-col items-center mt-16">
           <div
             className="w-full md:w-4/12 flex flex-col"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-           
+
           </div>
           <div
             className="w-full md:w-5/12 flex md:justify-end mt-8 md:mt-0 px-1"
