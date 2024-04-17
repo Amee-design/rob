@@ -4,16 +4,15 @@ import DesktopNav from "../../components/Navbars/DesktopNav";
 import MobileNav from "../../components/Navbars/MobileNav";
 import ContainerLayout from "../../Layouts/ContainerLayout";
 import Head from "next/head";
-import { Rating } from "react-simple-star-rating";
 import axios from "axios";
+import { Rating } from "react-simple-star-rating";
 import { MdRateReview } from "react-icons/md";
-import Success from "../../components/Modals/SuccessModal";
+
 const Review = () => {
   const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
   const [rating, setRating] = useState(0);
-  const [file, setFile] = useState(null);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const handleRating = (rate) => {
@@ -44,18 +43,6 @@ const Review = () => {
     } catch (error) {
       setError(error.message);
     }
-
-    // setSubmitted(true);
-    // const data = await postWaitList({ email: email });
-    //  if (data?.success) {
-    //    setSubmitted(true)
-
-    //  } else {
-    //    // alert(data?.error)
-    //    console.log(data.data.error);
-    //    setErrorMsg(data.data.error);
-    //    setError(true);
-    //  }
   };
   return (
     <>
