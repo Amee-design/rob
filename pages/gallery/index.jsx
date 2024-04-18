@@ -81,7 +81,7 @@ const Gallery = () => {
                       <Image
                         key={idx}
                         alt="photo"
-                        src={`https://rob-api-1.onrender.com/uploads/${item.file}`}
+                        src={item.path}
                         width={150}
                         height={150}
                         className="w-full h-full object-cover"
@@ -97,7 +97,7 @@ const Gallery = () => {
                     <div key={idx}>
                       <video
                         controls
-                        src={`https://rob-api-1.onrender.com/uploads/${item.file}`}
+                        src={item.path}
                         className="w-[300px] h-[300px]"
                       />
                     </div>
