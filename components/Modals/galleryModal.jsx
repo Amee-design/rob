@@ -40,7 +40,6 @@ export default function GalleryModal({
 
       form.append("meta", JSON.stringify(imageData));
 
-      console.log(...form);
       const response = await axios.post(
         "https://rob-api-1.onrender.com/api/v1/gallery",
         form,
