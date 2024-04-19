@@ -9,11 +9,13 @@ import Modal from "../../components/Modals/galleryModal";
 import Image from "next/image";
 const Gallery = () => {
   const [selected, setSelected] = useState("pictures");
+  const [isLoading, setIsLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const [fileData, setFileData] = useState([]);
 
   const fetchGalleryData = async () => {
     try {
+      setIsLoading(true);
       const response = await fetch(
         "https://rob-api-1.onrender.com/api/v1/gallery"
       );
@@ -22,7 +24,9 @@ const Gallery = () => {
       }
       const data = await response.json();
       setFileData(data.data);
+      setIsLoading(false);
     } catch (error) {
+      setIsLoading(false);
       console.error("Error fetching data:", error);
     }
   };
@@ -67,13 +71,18 @@ const Gallery = () => {
                 Videos
               </button>
             </div>
+            {isLoading ? (
+              <div class="flex justify-center items-center my-24">
+                <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"></div>
+              </div>
+            ) : null}
             <IoIosAddCircle
               onClick={() => {
                 setOpen(true);
               }}
               className="text-black dark:text-blue z-30 fixed bottom-20 right-14 w-20 h-20"
             />
-            {selected == "pictures" ? (
+            {!isLoading && selected == "pictures" ? (
               <div className="grid grid-cols-4 gap-8">
                 {fileData.map((item, idx) =>
                   item.type && item.type.startsWith("image/") ? (
