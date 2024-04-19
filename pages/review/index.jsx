@@ -10,25 +10,29 @@ import { MdRateReview } from "react-icons/md";
 
 const Review = () => {
   const [submitted, setSubmitted] = useState(false);
-  const [name, setName] = useState("");
-  const [title, setTitle] = useState("");
-  const [rating, setRating] = useState(0);
-  const [message, setMessage] = useState("");
+  const [reviewPayload, setReviewPayload] = useState({
+    name: "",
+    title: "",
+    rating: 0,
+    state: "",
+    message: "",
+  });
   const [error, setError] = useState("");
   const handleRating = (rate) => {
-    setRating(rate);
+    setReviewPayload((prev) => [...prev, { rating: rate }]);
   };
   const handleSubmit = async () => {
     try {
-      if (name && title && rating && message) {
+      if (
+        reviewPayload.name &&
+        reviewPayload.title &&
+        reviewPayload.state &&
+        reviewPayload.rating &&
+        reviewPayload.message
+      ) {
         const response = await axios.post(
           "https://rob-api-1.onrender.com/api/v1/reviews",
-          {
-            name: name,
-            title: title,
-            message: message,
-            rating: rating,
-          }
+          reviewPayload
         );
         console.log({ response });
         if (response.status != 201) {
@@ -86,8 +90,13 @@ const Review = () => {
                           type="text"
                           className="border-none w-full outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
                           placeholder="Name"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
+                          value={reviewPayload.name}
+                          onChange={(e) =>
+                            setReviewPayload((prev) => [
+                              ...prev,
+                              { name: e.target.value },
+                            ])
+                          }
                         />
                       </div>
 
@@ -96,8 +105,28 @@ const Review = () => {
                           type="text"
                           className="border-none w-full outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
                           placeholder="Title"
-                          value={title}
-                          onChange={(e) => setTitle(e.target.value)}
+                          value={reviewPayload.title}
+                          onChange={(e) =>
+                            setReviewPayload((prev) => [
+                              ...prev,
+                              { title: e.target.value },
+                            ])
+                          }
+                        />
+                      </div>
+
+                      <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-1">
+                        <input
+                          type="text"
+                          className="border-none w-full outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
+                          placeholder="State"
+                          value={reviewPayload.state}
+                          onChange={(e) =>
+                            setReviewPayload((prev) => [
+                              ...prev,
+                              { state: e.target.value },
+                            ])
+                          }
                         />
                       </div>
 
@@ -106,8 +135,13 @@ const Review = () => {
                           type="text"
                           className="border-none outline-none bg-transparent focus:outline-none focus:border-none w-full placeholder:text-placeholderLight"
                           placeholder="Message"
-                          value={message}
-                          onChange={(e) => setMessage(e.target.value)}
+                          value={reviewPayload.message}
+                          onChange={(e) =>
+                            setReviewPayload((prev) => [
+                              ...prev,
+                              { message: e.target.value },
+                            ])
+                          }
                         />
                       </div>
                       {/* <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-1">
