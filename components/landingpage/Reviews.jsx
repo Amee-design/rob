@@ -41,11 +41,16 @@ const Reviews = () => {
                   <h1 className="text-black dark:text-white font-bold text-base md:text-lg">
                     {item.name}
                   </h1>
-                  <p className="text-md textblackText">{item.title}</p>
+                  <div>
+                    <p className="text-md textblackText">{item.title}</p>
+                    <div className="text-xs textblackText mt-1">
+                      {item.state}
+                    </div>
+                  </div>
                   <Rating
                     initialValue={item.rating}
                     SVGstyle={{ display: "inline" }}
-                    size={12}
+                    size={22}
                     readonly
                   />
                   <p className="text-black dark:text-white text-base">
