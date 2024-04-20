@@ -19,7 +19,10 @@ const Review = () => {
   });
   const [error, setError] = useState("");
   const handleRating = (rate) => {
-    setReviewPayload((prev) => [...prev, { rating: rate }]);
+    setReviewPayload((prev) => ({
+      ...prev,
+      rating: rate,
+    }));
   };
   const handleSubmit = async () => {
     try {
@@ -92,10 +95,10 @@ const Review = () => {
                           placeholder="Name"
                           value={reviewPayload.name}
                           onChange={(e) =>
-                            setReviewPayload((prev) => [
+                            setReviewPayload((prev) => ({
                               ...prev,
-                              { name: e.target.value },
-                            ])
+                              name: e.target.value,
+                            }))
                           }
                         />
                       </div>
@@ -107,10 +110,10 @@ const Review = () => {
                           placeholder="Title"
                           value={reviewPayload.title}
                           onChange={(e) =>
-                            setReviewPayload((prev) => [
+                            setReviewPayload((prev) => ({
                               ...prev,
-                              { title: e.target.value },
-                            ])
+                              title: e.target.value,
+                            }))
                           }
                         />
                       </div>
@@ -122,10 +125,10 @@ const Review = () => {
                           placeholder="State"
                           value={reviewPayload.state}
                           onChange={(e) =>
-                            setReviewPayload((prev) => [
+                            setReviewPayload((prev) => ({
                               ...prev,
-                              { state: e.target.value },
-                            ])
+                              state: e.target.value,
+                            }))
                           }
                         />
                       </div>
@@ -137,22 +140,13 @@ const Review = () => {
                           placeholder="Message"
                           value={reviewPayload.message}
                           onChange={(e) =>
-                            setReviewPayload((prev) => [
+                            setReviewPayload((prev) => ({
                               ...prev,
-                              { message: e.target.value },
-                            ])
+                              message: e.target.value,
+                            }))
                           }
                         />
                       </div>
-                      {/* <div className="w-full rounded-[16px] border-[1px] border-borderGrey p-4 mb-1">
-                                                <input
-                                                    type="file"
-                                                    className="border-none w-full outline-none bg-transparent focus:outline-none focus:border-none placeholder:text-placeholderLight"
-                                                    placeholder="file"
-                                                    // multiple
-                                                    onChange={(e) => setFile(e.target.files[0])}
-                                                />
-                                            </div> */}
                       <div className="">
                         <Rating
                           onClick={handleRating}
@@ -162,7 +156,6 @@ const Review = () => {
                       {error && (
                         <p className="text-red-500 text-center py-4">{error}</p>
                       )}
-
                       <div
                         className="btn text-white px-6 text-base dark:text-white py-2 w-full flex justify-center items-center cursor-pointer "
                         onClick={handleSubmit}
